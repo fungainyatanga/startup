@@ -9,10 +9,10 @@ const Navbar: React.FC = () => {
 
          <ul className="nav-links">
              <li><a href="#app-section" >App</a></li>
-             <li><a href="#why-section">Why Startup</a></li>
+             <li><a href="#why-startup-section">Why Startup</a></li>
              <li><a href="#about-section">About</a></li>
              <li><a href="#plan-section">Plans</a></li>
-             <li><a href="#contact-section">Contact</a></li>
+             <li><a href="#support-section">Support</a></li>
          </ul>
 
          <div className="open-btn btn">
