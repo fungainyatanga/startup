@@ -1,0 +1,37 @@
+
+/* Home text */
+
+.home-content h1:first-of-type{
+    animation: swipe-from-right;
+    animation-duration: 3s;
+}
+
+@keyframes swipe-from-right {
+    0% {
+        margin-right: -2000px;
+    }
+    50% {
+        margin-right: 50px;
+    }
+    100% {
+        margin-right:0;
+    }
+}
+
+
+.home-content h1:last-of-type{
+    animation: swipe-from-left;
+    animation-duration: 3s;
+}
+
+@keyframes swipe-from-left {
+    0% {
+        margin-left: -2000px;
+    }
+    50% {
+        margin-left: 50px;
+    }
+    100% {
+        margin-left:0;
+    }
+}

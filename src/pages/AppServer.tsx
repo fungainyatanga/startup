@@ -1,4 +1,3 @@
-import React from "react";
 import {
   MdMicNone,
   MdImage,
@@ -7,47 +6,43 @@ import {
   MdSettings,
 } from "react-icons/md";
 
-import Beard from "../assets/svg/02-app_section/01-server_section/01-beared.svg";
-import Rocket from "../assets/svg/02-app_section/01-server_section/02-rocket.svg";
-import Dashboard from "../assets/svg/02-app_section/01-server_section/03-dashboard.svg";
-import Learning from "../assets/svg/02-app_section/01-server_section/04-learning.svg";
-import Hologram from "../assets/svg/02-app_section/01-server_section/05-hologram.svg";
-import Strategy from "../assets/svg/02-app_section/01-server_section/06-strategy.svg";
-import Chemical from "../assets/svg/02-app_section/01-server_section/07-chemicals.svg";
-import Timer from "../assets/svg/02-app_section/01-server_section/08-timer.svg";
-import Logo from "../assets/svg/02-app_section/01-server_section/09-logo.svg";
-import Dimitri from "../assets/svg/02-app_section/02-contacts_section/01-beared.svg";
-import DimImage from "../assets/images/app/01-contacts_section/01-dimitri.jpeg";
-import TanyaImage from "../assets/images/app/01-contacts_section/02-tanya.jpeg";
-import SteveImage from "../assets/images/app/01-contacts_section/03-steve.jpeg";
-import NatallyImage from "../assets/images/app/01-contacts_section/04-natally.jpeg";
-import AndreaImage from "../assets/images/app/01-contacts_section/05-andrea.jpeg";
-import ForestImage from "../assets/images/app/01-contacts_section/06-forrest.jpeg";
-import VincyImage from "../assets/images/app/01-contacts_section/07-vincy.jpeg";
-import PattImage from "../assets/images/app/01-contacts_section/08-patt.jpeg";
-import AngelaImage from "../assets/images/app/01-contacts_section/09-angela.jpeg";
-import Dimitri2image from "../assets/images/app/02-chat_section/01-dimitri.jpeg";
-import Tanya2Image from "../assets/images/app/02-chat_section/02-tanya.jpeg";
-import Steve2Image from "../assets/images/app/02-chat_section/03-steve.jpeg";
-import Natally2Image from "../assets/images/app/02-chat_section/04-natally.jpeg";
+import {
+  Beard,
+  Rocket,
+  Dashboard,
+  Learning,
+  Hologram,
+  Strategy,
+  Chemical,
+  Timer,
+  Logo,
+  DimImage,
+  TanyaImage,
+  SteveImage,
+  NatallyImage,
+  AndreaImage,
+  ForestImage,
+  VincyImage,
+  PattImage,
+  AngelaImage,
+  Calendar,
+  Clock,
+  Weather,
+  Stocks,
+  Invitations,
+  Ebooks,
+  Blog,
+  Design,
+  ProductRelease,
+} from "../assets/Media";
 import Stock from "../assets/images/app/02-chat_section/10-stocks.jpg";
 import Audio from "../assets/svg/02-app_section/03-chat_section/01-audio-message.svg";
-import Forrest2Image from "../assets/images/app/02-chat_section/06-forrest.jpeg";
-import Calendar from "../assets/svg/02-app_section/04-right_bar/01-calendar.svg";
-import Clock from "../assets/svg/02-app_section/04-right_bar/02-world-clock.svg";
-import Weather from "../assets/svg/02-app_section/04-right_bar/03-thermo.svg";
-import Stocks from "../assets/svg/02-app_section/04-right_bar/04-stocks.svg";
-import Invitations from "../assets/svg/02-app_section/04-right_bar/05-invitation.svg";
-import Ebooks from "../assets/svg/02-app_section/04-right_bar/06-ebooks.svg";
-import Blog from "../assets/svg/02-app_section/04-right_bar/07-blog.svg";
-import Design from "../assets/svg/02-app_section/04-right_bar/08-design.svg";
-import ProductRelease from "../assets/svg/02-app_section/04-right_bar/09-product_release.svg";
+
 interface AppProps {
   id: string;
 }
 
 const AppServer = (props: AppProps) => {
-  
   return (
     <div className="app-section" id={props.id}>
       <div className="backdrop"></div>
@@ -130,7 +125,7 @@ const AppServer = (props: AppProps) => {
           <button className="new-button">New Chat Room</button>
           <div className="team-info">
             <div className="team-dp">
-              <img src={Dimitri} alt="Dimitri" />
+              <img src={DimImage} alt="Dimitri" />
             </div>
             <div className="team-info-text">
               <h5>Dimitri's Team</h5>
@@ -233,10 +228,10 @@ const AppServer = (props: AppProps) => {
           <div className="app-chat-section-nav">
             <h4>Dimitris's Team</h4>
             <div className="chat-users">
-              <img src={Dimitri2image} alt="avatar" style={{ zIndex: 5 }} />
-              <img src={Tanya2Image} alt="avatar" style={{ zIndex: 4 }} />
-              <img src={Steve2Image} alt="avatar" style={{ zIndex: 3 }} />
-              <img src={Natally2Image} alt="avatar" style={{ zIndex: 2 }} />
+              <img src={DimImage} alt="avatar" style={{ zIndex: 5 }} />
+              <img src={TanyaImage} alt="avatar" style={{ zIndex: 4 }} />
+              <img src={SteveImage} alt="avatar" style={{ zIndex: 3 }} />
+              <img src={NatallyImage} alt="avatar" style={{ zIndex: 2 }} />
               <div className="add-user">+</div>
             </div>
           </div>
@@ -244,11 +239,7 @@ const AppServer = (props: AppProps) => {
           {/* App-Chat-History */}
           <div className="app-chat-history">
             <div className="chat-history-1 chat-history">
-              <img
-                src={Dimitri2image}
-                className="chat-history-dp"
-                alt="avatar"
-              />
+              <img src={DimImage} className="chat-history-dp" alt="avatar" />
               <div className="chat-history-text">
                 <h6>Dimitri</h6>
                 <p>Lorem ipsum dolor sit.</p>
@@ -256,7 +247,7 @@ const AppServer = (props: AppProps) => {
             </div>
 
             <div className="chat-history-2 chat-history">
-              <img src={Tanya2Image} className="chat-history-dp" alt="avatar" />
+              <img src={TanyaImage} className="chat-history-dp" alt="avatar" />
               <div className="chat-history-text">
                 <h6>Tanya</h6>
                 <img src={Stock} className="stocks" alt="stocks" />
@@ -319,7 +310,7 @@ const AppServer = (props: AppProps) => {
 
         <div className="app-right-nav">
           <div className="app-user">
-            <img src={Forrest2Image} alt="avatar" className="app-user" />
+            <img src={ForestImage} alt="avatar" className="app-user" />
             <div className="app-user-info">
               <h4>Forrest</h4>
               <br />
@@ -333,7 +324,6 @@ const AppServer = (props: AppProps) => {
             <div className="widget widget-1">
               <p>Calender</p>
               <img src={Calendar} alt="calendar" />
-              
             </div>
             <div className="widget widget-2">
               <p>World Clock</p>
@@ -346,12 +336,10 @@ const AppServer = (props: AppProps) => {
             <div className="widget widget-4">
               <p>Stocks</p>
               <img src={Stocks} alt="stock" />
-
             </div>
             <div className="widget widget-5">
               <p>Invitations</p>
               <img src={Invitations} alt="invitations" />
-
             </div>
           </div>
 
@@ -360,17 +348,21 @@ const AppServer = (props: AppProps) => {
             <h4>Media</h4>
             <div className="app-media-grid">
               <div className="grid-item item-1">
-                <img src={Ebooks} alt="ebooks" style={{height:"auto"}} />
+                <img src={Ebooks} alt="ebooks" style={{ height: "auto" }} />
               </div>
               <div className="grid-item item-2">
-                <img src={Blog} alt="blog"  style={{height:"auto"}}/>
+                <img src={Blog} alt="blog" style={{ height: "auto" }} />
               </div>
 
               <div className="grid-item item-3">
-                <img src={Design} alt="design"  style={{height:"auto"}} />
+                <img src={Design} alt="design" style={{ height: "auto" }} />
               </div>
               <div className="grid-item item-4">
-                <img src={ProductRelease} alt="product-release" style={{height:"80px"}} />
+                <img
+                  src={ProductRelease}
+                  alt="product-release"
+                  style={{ height: "80px" }}
+                />
               </div>
             </div>
           </div>

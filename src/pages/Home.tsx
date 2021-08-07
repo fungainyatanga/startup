@@ -19,7 +19,7 @@ const Home = (props: HomeProps) => {
         </div>
         <div className="home-description">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reiciendis vitae dignissimos. <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,  explicabo exercitationem  molestias dolores minima? <br />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div className="download-btn btn">
