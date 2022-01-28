@@ -150,7 +150,6 @@ h6 {
   background-image: linear-gradient(to right bottom, #004bfa, #02f18e);
   background-clip: text;
   -webkit-background-clip: text;
-
   -webkit-text-fill-color: transparent;
 }
 
